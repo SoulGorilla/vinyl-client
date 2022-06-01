@@ -6,6 +6,8 @@ import Main from "./Components/Main";
 import Post from "./Components/Post";
 import Details from "./Components/Details";
 
+const [currentAlbum, setCurrentAlbum] = useState("");
+
 function App() {
   return (
     <div className="App">
@@ -13,8 +15,8 @@ function App() {
       <Link to="/vinyls"> Vinyls </Link>
       {/* <Main /> */}
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/:id" element={<Details id={props.id} />} />
+        <Route path="/" element={<Main setCurrentAlbum={setCurrentAlbum} />} />
+        <Route path="/:id" element={<Details id={currentAlbum.id} />} />
         <Route path="/vinyls" element={<Post />} />
       </Routes>
     </div>

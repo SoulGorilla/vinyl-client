@@ -4,7 +4,7 @@ import { useState } from "react";
 import Post from "./Post";
 import { Route, Link, Routes, useParams } from "react-router-dom";
 
-const Main = () => {
+const Main = (props) => {
   const [displayData, setDisplayData] = useState([]);
   const [music, setMusic] = useState({});
   const [artistName, setArtistName] = useState("");
@@ -21,8 +21,8 @@ const Main = () => {
     return (
       <li>
         {i.albumName} {i.artistName}{" "}
-        <Link to="/:id" id={i._id}>
-          console.log(i._id) show details
+        <Link to="/:id" id={i._id} onClick={() => props.setCurrentAlbum(i._id)}>
+          show details
         </Link>
       </li>
     );
