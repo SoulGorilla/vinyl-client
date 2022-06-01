@@ -1,9 +1,10 @@
 import "./App.css";
-import { Route, Link, Routes } from "react-router-dom";
+import { Route, Link, Routes, useParams } from "react-router-dom";
 import { useState } from "react";
 import React from "react";
 import Main from "./Components/Main";
 import Post from "./Components/Post";
+import Details from "./Components/Details";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       {/* <Main /> */}
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/:id" element={<Details id={props.id} />} />
         <Route path="/vinyls" element={<Post />} />
       </Routes>
     </div>

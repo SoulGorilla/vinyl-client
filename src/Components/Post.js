@@ -28,6 +28,7 @@ const Post = () => {
         console.error("Error:", error);
       });
   };
+
   console.log(album);
   return (
     <div>
