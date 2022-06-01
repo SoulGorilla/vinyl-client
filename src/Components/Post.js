@@ -4,24 +4,21 @@ import { useState } from "react";
 
 const Post = () => {
   const [album, setAlbum] = useState({});
+  let submitObject = {};
 
-  const handleChange = (event) => {
-    event.preventDefault();
-    console.log(event.target.value);
-  };
   const handleSubmit = (event) => {
     event.preventDefault();
-    setAlbum({
+    submitObject = {
       albumName: event.nativeEvent.target[0].value,
       artistName: event.nativeEvent.target[1].value,
-    });
+    };
 
-    fetch("https://localhost:3000/vin", {
-      method: "POST", // or 'PUT'
+    fetch("http://localhost:3000/vinyls", {
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(submitObject),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -35,7 +32,7 @@ const Post = () => {
   return (
     <div>
       <form onSubmit={handleSubmit} type="text">
-        <input onChange={handleChange}></input>
+        <input></input>
         <input></input>
         <input type="submit"></input>
       </form>
