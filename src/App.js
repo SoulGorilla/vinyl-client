@@ -13,8 +13,8 @@ function App() {
       <Link to="/vinyls"> Vinyls </Link>
       {/* <Main /> */}
       <Routes>
-        <Route path="/" element={<Main setCurrentAlbum={setCurrentAlbum} />} />
-        <Route path="/:id" element={<Details id={currentAlbum.id} />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/:id" element={<Details />} />
         <Route path="/vinyls" element={<Post />} />
       </Routes>
     </div>
