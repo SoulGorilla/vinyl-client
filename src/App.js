@@ -6,8 +6,6 @@ import Main from "./Components/Main";
 import Post from "./Components/Post";
 import Details from "./Components/Details";
 
-const [currentAlbum, setCurrentAlbum] = useState("");
-
 function App() {
   return (
     <div className="App">
