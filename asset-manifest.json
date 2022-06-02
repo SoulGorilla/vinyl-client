@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vinyl-api/static/css/main.073c9b0a.css",
-    "main.js": "/vinyl-api/static/js/main.0b24a399.js",
+    "main.js": "/vinyl-api/static/js/main.57b3c789.js",
     "static/js/787.a1d16ba8.chunk.js": "/vinyl-api/static/js/787.a1d16ba8.chunk.js",
     "index.html": "/vinyl-api/index.html",
     "main.073c9b0a.css.map": "/vinyl-api/static/css/main.073c9b0a.css.map",
-    "main.0b24a399.js.map": "/vinyl-api/static/js/main.0b24a399.js.map",
+    "main.57b3c789.js.map": "/vinyl-api/static/js/main.57b3c789.js.map",
     "787.a1d16ba8.chunk.js.map": "/vinyl-api/static/js/787.a1d16ba8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.0b24a399.js"
+    "static/js/main.57b3c789.js"
   ]
 }
