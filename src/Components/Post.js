@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import apiUrl from "../../apiUrl";
+import apiUrl from "../apiUrls";
 
 const Post = () => {
   const [album, setAlbum] = useState({});

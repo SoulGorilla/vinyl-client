@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Post from "./Post";
 import { Route, Link, Routes, useParams } from "react-router-dom";
-import apiUrl from "../../apiUrl";
+import apiUrl from "../apiUrls";
 
 const Main = (props) => {
   const [displayData, setDisplayData] = useState([]);
@@ -47,7 +47,7 @@ const Main = (props) => {
 
     let current = [...displayData];
 
-    fetch(apiUrl, {
+    fetch(`${apiUrl}/vinyls`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
