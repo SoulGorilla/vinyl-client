@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import apiUrl from "../../apiUrl";
 
 const Post = () => {
   const [album, setAlbum] = useState({});
@@ -13,7 +14,7 @@ const Post = () => {
       artistName: event.nativeEvent.target[1].value,
     };
 
-    fetch("http://localhost:3000/vinyls", {
+    fetch(`${apiUrl}/vinyls`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
