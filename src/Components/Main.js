@@ -47,7 +47,7 @@ const Main = (props) => {
 
     let current = [...displayData];
 
-    fetch(`${apiUrl}/vinyls`, {
+    fetch(`${apiUrl}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -14,7 +14,7 @@ const Post = () => {
       artistName: event.nativeEvent.target[1].value,
     };
 
-    fetch(`${apiUrl}/vinyls`, {
+    fetch(`${apiUrl}vinyls`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
